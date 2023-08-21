@@ -1,5 +1,5 @@
 ### YoloV7_prj
-
+测试录制视频为yolov7-onnx-pyqt5.mp4
 ## 项目需求 (详见requirements.txt)
 * python == 3.13
 * numpy == 1.23.4
