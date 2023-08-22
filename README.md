@@ -29,6 +29,6 @@
 6. 利用pyinstaller将代码打包成.exe
 ![image](https://github.com/wangna123456/YoloV7_prj/assets/142497906/dc8205cf-887c-4ad4-a576-cbbf494291f3)
 
-测试数据放在data目录中。
+测试数据放在data目录中，检测结果保存到out目录里。
 
 ![image](https://github.com/wangna123456/YoloV7_prj/assets/142497906/820269bb-8970-4077-a12f-d3ec022a22c7)
