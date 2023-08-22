@@ -17,16 +17,17 @@
 * 录制检测视频
 * 保存实时截图、控制台记录
 ## 步骤
-1. 官网下载yolov7代码和与训练权重文件yolov7-tiny.pt  https://gitcode.net/mirrors/WongKinYiu/yolov7.git 
-2. 使用 YOLOv7 源码中 export.py 脚本，将 pytorch 模型转换为 onnx 模型，在cmd命令行中输入命令python export.py --weights yolov7-tiny.pt --grid --simplify，预训练权重文件转换成yolov7-tiny.pt.onnx。
+1. 官网下载yolov7代码和与训练权重文件yolov7-tiny.pt  https://gitcode.net/mirrors/WongKinYiu/yolov7.git
+2. 环境配置在https://github.com/wangna123456/Yolo.git中有详细介绍。
+3. 使用 YOLOv7 源码中 export.py 脚本，将 pytorch 模型转换为 onnx 模型，在cmd命令行中输入命令python export.py --weights yolov7-tiny.pt --grid --simplify，预训练权重文件转换成yolov7-tiny.pt.onnx。
 ![image](https://github.com/wangna123456/YoloV7_prj/assets/142497906/29d9110b-b183-4465-8fca-b58aec8585d5)
-3. 使用yolov7.onnx和 yolov7-tiny.pt.onnx部署到onnx模型上，进行目标检测。
+4. 使用yolov7.onnx和 yolov7-tiny.pt.onnx部署到onnx模型上，进行目标检测。
 ![image](https://github.com/wangna123456/YoloV7_prj/assets/142497906/32d9e139-04dc-48fe-a6b1-659c64b2c2b1)
-4. 使用pyqt5构建GUI界面。
+5. 使用pyqt5构建GUI界面。
 ![image](https://github.com/wangna123456/YoloV7_prj/assets/142497906/2ed0c562-6432-4e16-841d-f246926bd430)
-5. 运行Yolo2onnxDetectProjectDemo.py可以看到检测的可视化界面。
+6. 运行Yolo2onnxDetectProjectDemo.py可以看到检测的可视化界面。
  ![image](https://github.com/wangna123456/YoloV7_prj/assets/142497906/85d111ec-de1e-4e2e-bb65-6767bfaa784f)
-6. 利用pyinstaller将代码打包成.exe
+7. 利用pyinstaller将代码打包成.exe
 ![image](https://github.com/wangna123456/YoloV7_prj/assets/142497906/dc8205cf-887c-4ad4-a576-cbbf494291f3)
 
 测试数据放在data目录中，检测结果保存到out目录里。
