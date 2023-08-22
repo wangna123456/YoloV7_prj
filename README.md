@@ -18,7 +18,7 @@
 * 保存实时截图、控制台记录
 ## 步骤
 1. 官网下载yolov7代码和与训练权重文件yolov7-tiny.pt  https://gitcode.net/mirrors/WongKinYiu/yolov7.git
-2. 环境配置在https://github.com/wangna123456/Yolo.git中有详细介绍。
+2. 环境配置在https://github.com/wangna123456/Yolo.git    中有详细介绍。
 3. 使用 YOLOv7 源码中 export.py 脚本，将 pytorch 模型转换为 onnx 模型，在cmd命令行中输入命令python export.py --weights yolov7-tiny.pt --grid --simplify，预训练权重文件转换成yolov7-tiny.pt.onnx。
 ![image](https://github.com/wangna123456/YoloV7_prj/assets/142497906/29d9110b-b183-4465-8fca-b58aec8585d5)
 4. 使用yolov7.onnx和 yolov7-tiny.pt.onnx部署到onnx模型上，进行目标检测。
